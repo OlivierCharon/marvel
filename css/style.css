@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Marvel-Regular;
+    src: url(../fonts/Marvel-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bebas-Regular;
+    src: url(../fonts/Bebas-Regular.ttf);
+}
+
+@font-face {
+    font-family: Avengers;
+    src: url(../fonts/Avengers.ttf);
+}
+
+/* HEADER */
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background-color: #000000 !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container-fluid img {
+    max-height: 50px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container-fluid ul.navbar-nav.mr-auto {
+    margin: 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container-fluid > .row {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+ul.navbar-nav.mr-auto {
+    margin: 0;
+}
+
+.nav-menu {
+    border-top: 1px solid #ffffff50;
+    font-family: Marvel-Regular;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* TABLE */
+
+table {
+    border-collapse: collapse;
+    margin: 75px auto;
+    width: 500px;
+    text-align: center;
+}
+
+table > tr {
+    height: 50px;
+    border: 1px solid;
+}
+
+th, td {
+    width: 25px;
+}
+
+/* CHRONO LIST */
+
+main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+main > .row {
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+/* COLLAPSE DIV */
+
+.collapsible {
+    background-color: #FF0000;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: Bebas-Regular;
+    text-transform: uppercase;
+    font-size: 38px;
+    text-align: center;
+}
+
+main .active, main .collapsible:hover {
+    background-color: #000000;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+/* LOADER */
+
+/* Animation */
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Variables */
+/* Loading Icon */
+.loading {
+    width: 100%;
+    height: 100%;
+}
+
+.loading__ring {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.loading__ring:first-child {
+    transform: skew(30deg, 20deg);
+}
+
+.loading__ring:last-child {
+    transform: skew(-30deg, -20deg) scale(-1, 1);
+}
+
+.loading__ring:last-child svg {
+    animation-delay: -0.5s;
+}
+
+.loading__ring svg {
+    animation: rotate 1s linear infinite;
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+
+/*** ERROR PAGE ***/
+
+main#error {
+    font-family: Avengers;
+    background-color: #000000cf;
+    color: #ffffff;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main#error h1 {
+    font-size: 75px;
+    line-height: 2;
+}
+
+body#test .row {
+    border: 5px red solid;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+body#test .coltest {
+    border: 5px blue solid;
+    height: 50px;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.character-list a {
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navbarColor02 > h1 {
+    /* padding: 0.9rem 1rem; */
+    color: #fff;
+    /* padding: 0 !important;
+    margin: 0; */
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+    font-size: 3.031rem;
+}
+.img_style {
+    width: auto;
+    height: 100px;
+}
+.container_style {
+    padding-top: 10%;
+}
+.row_style {
+    padding-top: 10px;
+}
+.row_style > ul {
+    display: flex;
+    width: 100%;
+}
+
+main .row_style {
+    border: 0!important;
+    color: #f1f1f1;
+}
+main .row_style > h3 {
+    font-size: 1.2rem   ;
+}
+
+main .row_style a {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+main .row_style a:hover {
+    color: #ee171f;
+    text-decoration: none;
+}
+
+.col_style {
+    text-align: center;
+}
